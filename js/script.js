@@ -9,3 +9,15 @@ $(document).ready(function () {
       waitForAnimate: false,
    });
 });
+
+$(document).ready(function () {
+   $('.slider__track').slick({
+      dots: false,
+      adaptiveHeigh: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 2000,
+      easing: 'easeOutExpo',
+      waitForAnimate: false,
+   });
+});
