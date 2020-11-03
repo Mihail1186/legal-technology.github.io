@@ -135,7 +135,7 @@ body {
 }
 .button__btn {
    display: inline-block;
-   padding: 20px 55px;
+   padding: 8px 55px;
    background: #dec377;
    border-radius: 2px;
    font-size: 13px;
@@ -167,10 +167,11 @@ body {
 .cards__link {
    flex: 0 1 25%;
    padding: 0px 15px;
-   transition: opacity, box-shadow 0.3s linear;
+   transition:transform 0.3s linear;
    &:hover {
-      opacity: 0.8;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+      &:hover{
+         transform: translate3d(10px, -10px, 10px);
+      }
    }
 }
 .cards__item {
@@ -369,11 +370,6 @@ body {
    padding: 210px 0 50px;
 }
 
-.reviews__title {
-}
-.title__title {
-}
-
 .reviews__slider {
    margin: 35px 0 30px;
    .slider__items {
@@ -390,9 +386,6 @@ body {
       .slick-track {
          display: flex;
          align-items: flex-start;
-      }
-      /* конкретный слайдер */
-      .slider__item {
       }
 
       .slick-arrow {
@@ -444,8 +437,7 @@ body {
       padding: 0 15px;
       box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.08);
    }
-   .slider__image {
-   }
+
    .slider__img {
       width: 100%;
    }
@@ -475,8 +467,6 @@ body {
       overflow: hidden; */
    }
 
-   .text__text {
-   }
    .slider__link {
       display: inline-block;
       margin-top: 25px;
@@ -489,7 +479,47 @@ body {
    }
 }
 
-.reviews__button {
+/* ================partners==================== */
+
+.partners {
+   background-color: #fff;
 }
-.button__btn {
+
+.partners__inner {
+   padding: 55px 0 100px;
 }
+.partners__content {
+   display: flex;
+}
+.partners__text {
+   max-width: 670px;
+}
+
+.partners__button {
+   margin-left: 100px;
+}
+.partners__btn {
+   color: #dec377;
+   background-color: #fff;
+   border: 2px solid #dec377;
+   border-radius: 3px;
+   &:hover{
+      background-color: #dec377;
+      color: #fff;
+
+   }
+}
+.partners__logos {
+   margin-top: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.partners__link {
+   transition: all .3s linear;
+   display: block;
+   &:hover{
+      transform: translate3d(10px, -10px, 10px);
+   }
+}
+
