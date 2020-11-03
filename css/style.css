@@ -128,6 +128,7 @@ body {
   font-family: "Source Sans Pro";
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 .header__overview {
@@ -380,9 +381,10 @@ body {
 /* ==============directions======================= */
 .directions__inner {
   padding: 90px 0px 0px;
+  margin-bottom: -100px;
 }
 
-.directions__title {
+.title__title {
   font-size: 28px;
   line-height: 1.4;
   letter-spacing: 0.03em;
@@ -417,6 +419,8 @@ body {
   margin: 15px;
   min-height: 140px;
   position: relative;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .directions__subtitle {
@@ -462,7 +466,7 @@ body {
   display: flex;
 }
 
-.title__title {
+.directions__title {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 370px;
           flex: 1 0 370px;
@@ -500,9 +504,11 @@ body {
   font-size: 0;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 17px;
   height: 30px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .slider__box .slider__track .slick-arrow.slick-prev {
@@ -514,4 +520,142 @@ body {
 .slider__box .slider__track .slick-arrow.slick-next {
   background: url("../images/slider_01/next.svg") 0 0/100% no-repeat;
   right: -58px;
+}
+
+/* ======================reviews===================== */
+.reviews {
+  background: #ffffff;
+}
+
+.reviews__innere {
+  padding: 210px 0 50px;
+}
+
+.reviews__slider {
+  margin: 35px 0 30px;
+}
+
+.reviews__slider .slider__items {
+  /* Ограничивающая оболочка */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px -15px;
+  position: relative;
+  /* Активная точка */
+  /* Лента слайдов */
+  /* конкретный слайдер */
+  /* Элемент точки */
+}
+
+.reviews__slider .slider__items .slick-list {
+  overflow: hidden;
+}
+
+.reviews__slider .slider__items .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews__slider .slider__items .slick-arrow {
+  font-size: 0;
+  position: absolute;
+  bottom: -41px;
+  width: 10px;
+  height: 18px;
+  opacity: 0.6;
+}
+
+.reviews__slider .slider__items .slick-arrow.slick-prev {
+  background: url("../images/slider_01/prev.svg") 0 0/100% no-repeat;
+  right: 70px;
+  z-index: 1;
+}
+
+.reviews__slider .slider__items .slick-arrow.slick-next {
+  background: url("../images/slider_01/next.svg") 0 0/100% no-repeat;
+  right: 20px;
+}
+
+.reviews__slider .slider__items .slick-dots {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.reviews__slider .slider__items .slick-dots li + li {
+  margin-left: 10px;
+}
+
+.reviews__slider .slider__items .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.reviews__slider .slider__items .slick-dots li.slick-active button {
+  background-color: #dec377;
+}
+
+.reviews__slider .slider__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 15px;
+  -webkit-box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.reviews__slider .slider__img {
+  width: 100%;
+}
+
+.reviews__slider .slider__content {
+  padding: 40px 50px 65px;
+}
+
+.reviews__slider .slider__post {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.reviews__slider .slider__author {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #dec377;
+}
+
+.reviews__slider .slider__text {
+  min-height: 250px;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  /*    text-overflow: ellipsis;
+      overflow: hidden; */
+}
+
+.reviews__slider .slider__link {
+  display: inline-block;
+  margin-top: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  line-height: 1.6;
+  text-transform: uppercase;
 }

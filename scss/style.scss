@@ -38,7 +38,9 @@ body {
    font-family: "Source Sans Pro";
    font-size: 16px;
    color: rgba(0, 0, 0, 0.8);
+   cursor: pointer;
 }
+
 .header__overview {
    margin-right: 175px;
    opacity: 0.9;
@@ -246,9 +248,10 @@ body {
 
 .directions__inner {
    padding: 90px 0px 0px;
+   margin-bottom: -100px;
 }
 
-.directions__title {
+.title__title {
    font-size: 28px;
    line-height: 1.4;
    letter-spacing: 0.03em;
@@ -270,6 +273,7 @@ body {
    margin: 15px;
    min-height: 140px;
    position: relative;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .directions__subtitle {
@@ -310,7 +314,7 @@ body {
    padding: 100px 0px 60px;
    display: flex;
 }
-.title__title {
+.directions__title {
    flex: 1 0 370px;
 }
 
@@ -337,10 +341,11 @@ body {
       .slick-arrow {
          font-size: 0;
          position: absolute;
-         top:50%;
+         top: 50%;
+         transform: translateY(-50%);
          width: 17px;
          height: 30px;
-         opacity:.6;
+         opacity: 0.6;
       }
       .slick-arrow.slick-prev {
          background: url("../images/slider_01/prev.svg") 0 0/100% no-repeat;
@@ -352,4 +357,139 @@ body {
          right: -58px;
       }
    }
+}
+
+/* ======================reviews===================== */
+
+.reviews {
+   background: #ffffff;
+}
+
+.reviews__innere {
+   padding: 210px 0 50px;
+}
+
+.reviews__title {
+}
+.title__title {
+}
+
+.reviews__slider {
+   margin: 35px 0 30px;
+   .slider__items {
+      /* Ограничивающая оболочка */
+      display: flex;
+      margin: 0px -15px;
+      position: relative;
+
+      /* Активная точка */
+      .slick-list {
+         overflow: hidden;
+      }
+      /* Лента слайдов */
+      .slick-track {
+         display: flex;
+         align-items: flex-start;
+      }
+      /* конкретный слайдер */
+      .slider__item {
+      }
+
+      .slick-arrow {
+         font-size: 0;
+         position: absolute;
+         bottom: -41px;
+         width: 10px;
+         height: 18px;
+         opacity: 0.6;
+      }
+      .slick-arrow.slick-prev {
+         background: url("../images/slider_01/prev.svg") 0 0/100% no-repeat;
+         right: 70px;
+         z-index: 1;
+      }
+      .slick-arrow.slick-next {
+         background: url("../images/slider_01/next.svg") 0 0/100% no-repeat;
+         right: 20px;
+      }
+
+      .slick-dots {
+         position: absolute;
+         display: flex;
+         bottom: -45px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+
+      .slick-dots li + li {
+         margin-left: 10px;
+      }
+
+      /* Элемент точки */
+      .slick-dots li button {
+         font-size: 0;
+         width: 10px;
+         height: 10px;
+         background: rgba(0, 0, 0, 0.1);
+         border-radius: 50%;
+      }
+
+      .slick-dots li.slick-active button {
+         background-color: #dec377;
+      }
+   }
+
+   .slider__item {
+      flex: 0 1 50%;
+      padding: 0 15px;
+      box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.08);
+   }
+   .slider__image {
+   }
+   .slider__img {
+      width: 100%;
+   }
+   .slider__content {
+      padding: 40px 50px 65px;
+   }
+   .slider__post {
+      font-family: "Lato", sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(0, 0, 0, 0.5);
+   }
+   .slider__author {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+      color: #dec377;
+   }
+   .slider__text {
+      min-height: 250px;
+      font-size: 14px;
+      line-height: 1.8;
+      letter-spacing: 0.01em;
+
+      /*    text-overflow: ellipsis;
+      overflow: hidden; */
+   }
+
+   .text__text {
+   }
+   .slider__link {
+      display: inline-block;
+      margin-top: 25px;
+      font-family: "Lato", sans-serif;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 12px;
+      line-height: 1.6;
+      text-transform: uppercase;
+   }
+}
+
+.reviews__button {
+}
+.button__btn {
 }

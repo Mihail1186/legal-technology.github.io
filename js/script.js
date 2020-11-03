@@ -8,15 +8,27 @@ $(document).ready(function () {
       easing: 'easeOutExpo',
       waitForAnimate: false,
    });
-});
 
-$(document).ready(function () {
+
+
    $('.slider__track').slick({
       dots: false,
       adaptiveHeigh: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      speed: 2000,
+      speed: 1000,
+      easing: 'easeOutExpo',
+      waitForAnimate: false,
+   });
+
+
+
+   $('.slider__items').slick({
+      dots: true,
+      adaptiveHeigh: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      speed: 1000,
       easing: 'easeOutExpo',
       waitForAnimate: false,
    });
