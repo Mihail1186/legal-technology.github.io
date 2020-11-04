@@ -94,6 +94,14 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+
+.header__body {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header__inner {
@@ -110,13 +118,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header__lang {
   font-family: "Source Sans Pro";
   font-size: 16px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 1.25;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -132,8 +141,11 @@ body {
 }
 
 .header__overview {
-  margin-right: 175px;
-  opacity: 0.9;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header__socials a {
@@ -162,7 +174,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.75);
-  line-height: 0.7;
+  line-height: 1.4;
   letter-spacing: 0.03em;
   margin-left: 50px;
 }
@@ -978,7 +990,7 @@ body {
 }
 
 .advantages__item {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 17px;
   line-height: 1.76;
@@ -993,7 +1005,7 @@ body {
 }
 
 .advantages__item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0px;
@@ -1004,12 +1016,12 @@ body {
 }
 
 .advantages__item::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 15px;
   top: 15px;
   width: 10px;
   height: 10px;
-  background: #DEC377;
+  background: #dec377;
   border-radius: 300px;
 }

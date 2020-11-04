@@ -13,22 +13,31 @@ body {
    max-width: 1200px;
    margin: 0 auto;
    padding: 0 15px;
+   transform: translateX(-30px);
+}
+
+.header__body{
+   max-width: 1260px;
+   margin: 0 auto;
+   padding: 0 15px;
 }
 
 .header__inner {
    padding: 15px 0 22px 0;
+
 }
 
 .header__top {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   position: relative;
 }
 .header__lang {
    font-family: "Source Sans Pro";
    font-size: 16px;
    font-weight: 300;
-   line-height: 20px;
+   line-height: 1.25;
    color: rgba(0, 0, 0, 0.8);
    span {
       margin-right: 13px;
@@ -42,8 +51,10 @@ body {
 }
 
 .header__overview {
-   margin-right: 175px;
-   opacity: 0.9;
+   position: absolute;
+   left: 50%;
+   top: 0;
+   transform: translateX(-50%);
 }
 .header__socials {
    a {
@@ -65,7 +76,7 @@ body {
    font-weight: 500;
    text-transform: uppercase;
    color: rgba(0, 0, 0, 0.75);
-   line-height: 0.7;
+   line-height: 1.4;
    letter-spacing: 0.03em;
    margin-left: 50px;
    &:first-child {
@@ -219,7 +230,6 @@ body {
    display: flex;
    justify-content: space-between;
    background-color: #fff;
-
 }
 .legal-support__column {
    padding: 50px 60px;
@@ -703,27 +713,21 @@ body {
    max-width: 770px;
 }
 
-
-
-
 /* ==============advantages================== */
-
 
 .advantages {
    background-color: #fff;
 }
 
-
 .advantages__inner {
    padding: 20px 0 40px;
-
 }
 
 .advantages__row {
    display: flex;
    align-items: center;
    padding: 60px 0px;
-   &:first-child{
+   &:first-child {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
    }
 }
@@ -741,20 +745,20 @@ body {
 }
 
 .advantages__item {
-   font-family: 'Lato', sans-serif;
+   font-family: "Lato", sans-serif;
    font-weight: 600;
    font-size: 17px;
    line-height: 1.76;
    letter-spacing: 0.01em;
    padding-left: 70px;
    margin-bottom: 30px;
-   &:last-child{
+   &:last-child {
       margin-bottom: 0;
    }
 
    position: relative;
-   &::before{
-      content: '';
+   &::before {
+      content: "";
       position: absolute;
       left: 0;
       top: 0px;
@@ -764,14 +768,14 @@ body {
       border-radius: 300px;
    }
 
-   &::after{
-      content: '';
+   &::after {
+      content: "";
       position: absolute;
-      left:15px;
+      left: 15px;
       top: 15px;
       width: 10px;
       height: 10px;
-      background: #DEC377;
+      background: #dec377;
       border-radius: 300px;
    }
 }
