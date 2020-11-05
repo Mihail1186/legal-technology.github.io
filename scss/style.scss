@@ -906,8 +906,8 @@ hr {
          color: rgba(0, 0, 0, 0.5);
          font-weight: 700;
          border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-         &:hover{
-            opacity: .8;
+         &:hover {
+            opacity: 0.8;
          }
       }
    }
@@ -936,4 +936,225 @@ hr {
    font-size: 15px;
    line-height: 1.6;
    max-width: 670px;
+}
+
+/* ==============footer=================== */
+
+.footer {
+}
+.footer__inner {
+   padding: 49px 0 60px;
+   display: flex;
+   margin: 0 -15px;
+}
+
+.aside {
+   flex: 1 1 270px;
+   padding: 15px;
+}
+.aside__organization {
+   font-size: 20px;
+   line-height: 1.5;
+}
+.aside__aside {
+   margin-top: 70px;
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 1.5;
+   letter-spacing: 0.01em;
+   color: rgba(0, 0, 0, 0.5);
+   span {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      margin-left: 15px;
+   }
+}
+.aside__ratings {
+   margin-top: 10px;
+}
+.aside__socials {
+   margin-top: 62px;
+   display: flex;
+   justify-content: space-between;
+}
+.aside__link {
+   transition: opacity 0.2s ease-in-out;
+   &:hover {
+      opacity: 0.8;
+   }
+}
+.aside__icon {
+}
+
+.aside__map {
+   margin-top: 51.5px;
+   max-width: 159px;
+}
+
+.aside__arrow {
+   font-family: "Lato", sans-serif;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.6;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+   a {
+      color: rgba(0, 0, 0, 0.75);
+   }
+   position: relative;
+   &::after {
+      content: "";
+      background: url("../images/footer/icons/arrow.svg") no-repeat;
+      width: 60px;
+      height: 12px;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+   transition: opacity 0.2s ease-in-out;
+   &:hover {
+      opacity: 0.9;
+   }
+}
+
+.aside__politics {
+   margin-top: 30px;
+   max-width: 230px;
+}
+
+.offices {
+   flex: 1 1 670px;
+   padding: 0 0 0 15px;
+   margin-top: 35px;
+}
+
+.offices__title {
+   padding-bottom: 5px;
+}
+.footer__title {
+   font-family: "Lato", sans-serif;
+   font-size: 15px;
+   line-height: 1.6;
+   text-transform: uppercase;
+   color: rgba(0, 0, 0, 0.5);
+   position: relative;
+   &::after {
+      content: "";
+      width: 640px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.1);
+      opacity: 0.7;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+   }
+}
+.offices__column {
+   display: flex;
+   margin: 29px -1.5px 0;
+}
+
+.offices__contacts {
+   flex: 0 1 220px;
+   padding: 0 17.5px 0 2.5px;
+   .offices__address {
+      margin: 20px 0;
+      letter-spacing: 0px;
+   }
+}
+.offices__subtitle {
+   line-height: 1.78;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: rgba(0, 0, 0, 0.75);
+}
+.offices__phone {
+   margin: 20px 0;
+}
+.offices__tel {
+   font-family: "Lato", sans-serif;
+   font-weight: 300;
+   font-size: 13px;
+   line-height: 1.5;
+   color: rgba(0, 0, 0, 0.8);
+   display: inline-block;
+}
+
+.footer__address {
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 1.5;
+   letter-spacing: 0.01em;
+   color: rgba(0, 0, 0, 0.75);
+   p {
+      margin-top: 5px;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.8);
+   }
+}
+.offices__mail {
+   font-size: 13px;
+   line-height: 1.5;
+   margin-top: 5px;
+   a {
+      color: rgba(0, 0, 0, 0.8);
+   }
+}
+.offices__branch {
+   padding: 0 15px 0 0px;
+   .footer__address{
+      margin: 10px 0 0px 0;
+   }
+}
+.offices__items {
+   display: flex;
+   flex-flow: column wrap;
+   max-height: 465px;
+   margin: -17.5px -15px 0 0px;
+}
+.offices__item {
+   max-width: 235px;
+   padding: 17.5px;
+   &:first-child {
+      margin-top: 0;
+   }
+}
+
+.schedule {
+   flex: 1 1 170px;
+   padding: 15px;
+   margin-top: 35px;
+}
+.schedule__title {
+   position: relative;
+   &::after {
+      content: "";
+      width: 170px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.1);
+      opacity: 0.7;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+   }
+}
+.schedule__reception {
+}
+
+.footer__footer {
+   text-align: center;
+   padding: 17px 18px;
+   background: rgba(0, 0, 0, 0.1);
+   h2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      color: rgba(0, 0, 0, 0.8);
+   }
 }
