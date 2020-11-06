@@ -949,8 +949,8 @@ hr {
 }
 
 .aside {
-   flex: 1 1 270px;
-   padding: 15px;
+   max-width: 270px;
+   padding:0 15px;
 }
 .aside__organization {
    font-size: 20px;
@@ -978,12 +978,19 @@ hr {
    justify-content: space-between;
 }
 .aside__link {
+   display: inline-block;
+   height: 26.5px;
+   width: 26.5px;
    transition: opacity 0.2s ease-in-out;
    &:hover {
       opacity: 0.8;
    }
 }
 .aside__icon {
+   width: 100%;
+   height: 100%;
+   display: block;
+
 }
 
 .aside__map {
@@ -1026,7 +1033,8 @@ hr {
 .offices {
    flex: 1 1 670px;
    padding: 0 0 0 15px;
-   margin-top: 35px;
+   margin-top: 36px;
+   margin-left: 28px;
 }
 
 .offices__title {
@@ -1061,6 +1069,9 @@ hr {
    .offices__address {
       margin: 20px 0;
       letter-spacing: 0px;
+   }
+   .offices__mail {
+      font-family: "Commissioner";
    }
 }
 .offices__subtitle {
@@ -1097,27 +1108,33 @@ hr {
    }
 }
 .offices__mail {
+   font-family: "Lato", sans-serif;
    font-size: 13px;
    line-height: 1.5;
-   margin-top: 5px;
    a {
       color: rgba(0, 0, 0, 0.8);
    }
 }
 .offices__branch {
+   display: flex;
+   height: 465px;
    padding: 0 15px 0 0px;
-   .footer__address{
+   .footer__address {
       margin: 10px 0 0px 0;
+   }
+   .offices__mail {
+      font-family: "Lato", sans-serif;
+      margin-top: 5px;
    }
 }
 .offices__items {
    display: flex;
    flex-flow: column wrap;
-   max-height: 465px;
+
    margin: -17.5px -15px 0 0px;
 }
 .offices__item {
-   max-width: 235px;
+   min-width: 235px;
    padding: 17.5px;
    &:first-child {
       margin-top: 0;
@@ -1125,11 +1142,12 @@ hr {
 }
 
 .schedule {
-   flex: 1 1 170px;
-   padding: 15px;
-   margin-top: 35px;
+   flex: 0 1 200px;
+   padding:0 15px;
+   margin-top: 36px;
 }
 .schedule__title {
+   padding-bottom: 5px;
    position: relative;
    &::after {
       content: "";
@@ -1143,6 +1161,20 @@ hr {
    }
 }
 .schedule__reception {
+   font-size: 13px;
+   line-height: 1.5;
+   h6{
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: rgba(0, 0, 0, 0.75);
+      margin-bottom: 5px;
+   }
+   p{
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.8);
+   }
+      margin: 30px 0;
 }
 
 .footer__footer {

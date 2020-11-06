@@ -1237,10 +1237,8 @@ hr {
 }
 
 .aside {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 270px;
-          flex: 1 1 270px;
-  padding: 15px;
+  max-width: 270px;
+  padding: 0 15px;
 }
 
 .aside__organization {
@@ -1278,12 +1276,21 @@ hr {
 }
 
 .aside__link {
+  display: inline-block;
+  height: 26.5px;
+  width: 26.5px;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
 
 .aside__link:hover {
   opacity: 0.8;
+}
+
+.aside__icon {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .aside__map {
@@ -1333,7 +1340,8 @@ hr {
       -ms-flex: 1 1 670px;
           flex: 1 1 670px;
   padding: 0 0 0 15px;
-  margin-top: 35px;
+  margin-top: 36px;
+  margin-left: 28px;
 }
 
 .offices__title {
@@ -1379,6 +1387,10 @@ hr {
   letter-spacing: 0px;
 }
 
+.offices__contacts .offices__mail {
+  font-family: "Commissioner";
+}
+
 .offices__subtitle {
   line-height: 1.78;
   letter-spacing: 0.04em;
@@ -1417,9 +1429,9 @@ hr {
 }
 
 .offices__mail {
+  font-family: "Lato", sans-serif;
   font-size: 13px;
   line-height: 1.5;
-  margin-top: 5px;
 }
 
 .offices__mail a {
@@ -1427,11 +1439,20 @@ hr {
 }
 
 .offices__branch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 465px;
   padding: 0 15px 0 0px;
 }
 
 .offices__branch .footer__address {
   margin: 10px 0 0px 0;
+}
+
+.offices__branch .offices__mail {
+  font-family: "Lato", sans-serif;
+  margin-top: 5px;
 }
 
 .offices__items {
@@ -1442,12 +1463,11 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  max-height: 465px;
   margin: -17.5px -15px 0 0px;
 }
 
 .offices__item {
-  max-width: 235px;
+  min-width: 235px;
   padding: 17.5px;
 }
 
@@ -1456,14 +1476,15 @@ hr {
 }
 
 .schedule {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 170px;
-          flex: 1 1 170px;
-  padding: 15px;
-  margin-top: 35px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+  padding: 0 15px;
+  margin-top: 36px;
 }
 
 .schedule__title {
+  padding-bottom: 5px;
   position: relative;
 }
 
@@ -1476,6 +1497,25 @@ hr {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.schedule__reception {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+.schedule__reception h6 {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 5px;
+}
+
+.schedule__reception p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .footer__footer {
