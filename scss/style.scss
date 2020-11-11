@@ -211,103 +211,97 @@ hr {
    }
 
    .header__burger {
-            display: block;
-            position: relative;
-            width: 35px;
-            height: 25px;
-            position: relative;
-            z-index: 5;
-            span {
-               position: absolute;
-               left: 0;
-               width: 100%;
-               height: 2px;
-               top: 12px;
-               background: #E0C780;
-               transition: all 0.3s ease 0s;
-            }
-      
-            &::before,
-            &::after {
-               content: "";
-               background: #E0C780;
-               position: absolute;
-               width: 100%;
-               height: 2px;
-               left: 0;
-               transition: all 0.3s ease 0s;
-            }
-            &::before {
-               top: 0;
-            }
-            &::after {
-               bottom: 0;
-            }
-            &.active span {
-               transform: scale(0);
-            }
-            &.active::before {
-               transform: rotate(45deg);
-               top: 11px;
-            }
-            &.active::after {
-               transform: rotate(-45deg);
-               bottom: 11px;
-            }
-         }
-         .logo__burger{
-            position: fixed;
-            top: -130%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            padding: 20px 0 0 15px;
-            display: block;
-            transition: all 0.3s ease 0s;
-            overflow: auto;
-         }
-
-         .logo__burger.active{
-            top: 0px;
-            left: 0px;
-            z-index: 4;
-         }
-
-         .menu {
-            &__link:hover:before {
-               transform: scaleX(0);
-            }
-            position: fixed;
-            top: -130%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.377);
-            padding-top: 110px;
-            display: block;
-            transition: all 0.3s ease 0s;
-            overflow: auto;
-            &__link:last-child{
-               display: none;
-            }
-             a {
-                font-size: 20px;
-               color: #ebc355;
-            }
-         }
-      
-         .menu.active {
-            display: flex;
-            flex-direction: column;
-            background: rgba(255, 255, 255, 0.945);
-            top: 0px;
-            left: 0px;
-            z-index: 2;
-         }
-         .menu a + a {
-            padding-top: 15px;
-            margin-left: 0px;
-         }
+   display: block;
+   position: relative;
+   width: 35px;
+   height: 25px;
+   position: relative;
+   z-index: 5;
+   span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 12px;
+      background: #E0C780;
+      transition: all 0.3s ease 0s;
+   }
+   &::before,
+   &::after {
+      content: "";
+      background: #E0C780;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+   }
+   &::before {
+      top: 0;
+   }
+   &::after {
+      bottom: 0;
+   }
+   &.active span {
+      transform: scale(0);
+   }
+   &.active::before {
+      transform: rotate(45deg);
+      top: 11px;
+   }
+   &.active::after {
+      transform: rotate(-45deg);
+      bottom: 11px;
+   }
+}
+.logo__burger{
+   position: fixed;
+   top: -130%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   padding: 20px 0 0 15px;
+   display: block;
+   transition: all 0.3s ease 0s;
+   overflow: auto;
+}.logo__burger.active{
+   top: 0px;
+   left: 0px;
+   z-index: 4;
+}.menu {
+   &__link:hover:before {
+      transform: scaleX(0);
+   }
+   position: fixed;
+   top: -130%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.377);
+   padding-top: 110px;
+   display: block;
+   transition: all 0.3s ease 0s;
+   overflow: auto;
+   &__link:last-child{
+      display: none;
+   }
+    a {
+       font-size: 20px;
+      color: #ebc355;
+   }
+}
+.menu.active {
+   display: flex;
+   flex-direction: column;
+   background: rgba(255, 255, 255, 0.945);
+   top: 0px;
+   left: 0px;
+   z-index: 2;
+}
+.menu a + a {
+   padding-top: 15px;
+   margin-left: 0px;
+}
 }
 
 /* ========slider__top============== */
@@ -429,7 +423,6 @@ hr {
 
 @media (max-width: 670px){
    .slider__top {
-
       .slider {
          .slick-arrow {
             position: absolute;
