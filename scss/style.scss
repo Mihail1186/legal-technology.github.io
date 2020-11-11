@@ -2362,3 +2362,130 @@ hr {
       }
    }
 }
+
+@media (max-width: 670px){
+   .footer__inner {
+      padding:30px 0px;
+      margin: 0px;
+      display: flex;
+   }
+
+   .aside {
+      max-width: 100%;
+      margin-bottom: 30px;
+      padding: 0;
+      flex: 0 1 100%;
+
+   }
+   .aside__organization {
+      font-size: 14px;
+   }
+   .aside__aside {
+      font-size: 12px;
+      margin-top: 12px;
+   }
+   .aside__socials {
+      max-width: 80%;
+      margin-top: 30px;
+   }
+   .aside__arrow{
+      font-size: 11px;
+   }
+   .aside__map {
+      max-width: 140px;
+      margin-top: 20px;
+   }
+   .aside__politics {
+      margin-top: 25px;
+      max-width: 280px;
+   }
+
+   .offices {
+      flex: 0 1 100%;
+      padding: 0 0 10px;
+      margin: 0;
+      order: 2;
+   }
+   .footer__title {
+      font-size: 14px;
+      &::after {
+         width: 100%;
+      }
+   }
+   .offices__column{
+      flex-direction: column;
+   }
+
+   .offices__contacts {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 50%;
+      padding: 0 10px 0 0px;
+   }
+   .offices__tel {
+      display: flex;
+      font-size: 13px;
+   }
+
+   .footer__address {
+      font-size: 13px;
+      p {
+         font-size: 14px;
+      }
+   }
+   .offices__mail {
+      font-size: 15px;
+   }
+   .offices__branch {
+      padding: 0;
+      margin-top: 50px;
+      flex: 1 1 100%;
+      height: auto;
+   }
+   .offices__items {
+      margin: -15px -15px 0 0px;
+   }
+   .offices__item{
+      padding: 0;
+      margin-top: 30px;
+   }
+   .schedule {
+      margin-top: 30px;
+      order: 3;
+      flex: 0 1 100%;
+      padding: 0;;
+   }
+   .schedule__reception {
+      font-size: 13px;
+      h6 {
+         font-size: 16px;
+      }
+   }
+   .footer__footer {
+      text-align: center;
+      padding: 8px 0;
+      h2 {
+         font-size: 11px;
+      }
+   }
+
+   .footer__scroll {
+      height: 50px;
+   }
+   
+   .back-to-top {
+      font-size: 16px;
+      padding-right: 50px;
+      &::after,
+      &::before {
+         right: 20px;
+         top: 11px;
+         transform: translate(50%, 50%);
+      }
+      &::before {
+         content: "";
+         width: 10px;
+         height: 10px;
+      }
+   }
+}

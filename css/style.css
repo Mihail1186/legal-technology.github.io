@@ -3091,3 +3091,149 @@ img {
     color: rgba(0, 0, 0, 0.8);
   }
 }
+
+@media (max-width: 670px) {
+  .footer__inner {
+    padding: 30px 0px;
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aside {
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .aside__organization {
+    font-size: 14px;
+  }
+  .aside__aside {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .aside__socials {
+    max-width: 80%;
+    margin-top: 30px;
+  }
+  .aside__arrow {
+    font-size: 11px;
+  }
+  .aside__map {
+    max-width: 140px;
+    margin-top: 20px;
+  }
+  .aside__politics {
+    margin-top: 25px;
+    max-width: 280px;
+  }
+  .offices {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0 0 10px;
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__title {
+    font-size: 14px;
+  }
+  .footer__title::after {
+    width: 100%;
+  }
+  .offices__column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offices__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding: 0 10px 0 0px;
+  }
+  .offices__tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 13px;
+  }
+  .footer__address {
+    font-size: 13px;
+  }
+  .footer__address p {
+    font-size: 14px;
+  }
+  .offices__mail {
+    font-size: 15px;
+  }
+  .offices__branch {
+    padding: 0;
+    margin-top: 50px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    height: auto;
+  }
+  .offices__items {
+    margin: -15px -15px 0 0px;
+  }
+  .offices__item {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .schedule {
+    margin-top: 30px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0;
+  }
+  .schedule__reception {
+    font-size: 13px;
+  }
+  .schedule__reception h6 {
+    font-size: 16px;
+  }
+  .footer__footer {
+    text-align: center;
+    padding: 8px 0;
+  }
+  .footer__footer h2 {
+    font-size: 11px;
+  }
+  .footer__scroll {
+    height: 50px;
+  }
+  .back-to-top {
+    font-size: 16px;
+    padding-right: 50px;
+  }
+  .back-to-top::after, .back-to-top::before {
+    right: 20px;
+    top: 11px;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+  }
+  .back-to-top::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+  }
+}
