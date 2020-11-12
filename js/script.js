@@ -7,6 +7,15 @@ $(document).ready(function () {
       speed: 2000,
       easing: 'easeOutExpo',
       waitForAnimate: false,
+      responsive: [
+        {
+          breakpoint: 675,
+          settings: {
+            arrows: false,
+            dots: true,
+          }
+        }
+      ]
    });
 
 
@@ -73,7 +82,7 @@ $(document).ready(function () {
     backToTop();
 
     $('.header__burger').click(function (event) {
-      $('.header__burger, .menu, .logo__burger').toggleClass('active');
+      $('.header__burger, .menu, .logo__burger, .header__socials ').toggleClass('active');
       $('body').toggleClass('lock');
    })
 
