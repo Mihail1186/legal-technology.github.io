@@ -684,7 +684,7 @@ hr {
   }
   .header__socials a {
     margin-left: 0;
-    font-size: 18px;
+    font-size: 17px;
     color: red;
     margin-top: 5px;
   }
@@ -789,7 +789,7 @@ hr {
     display: none;
   }
   .menu a {
-    font-size: 20px;
+    font-size: 18px;
     color: #ebc355;
   }
   .menu.active {
