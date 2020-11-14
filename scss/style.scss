@@ -496,7 +496,7 @@ hr {
 /* ==================legal-support==================== */
 
 .page {
-  background-color: #fff;
+  background: #e5e5e5;
 }
 
 .cards {
@@ -1229,6 +1229,7 @@ hr {
   img {
     display: block;
     max-width: 100%;
+    filter: grayscale(100%);
   }
 }
 
@@ -1259,12 +1260,12 @@ hr {
     justify-content: space-between;
     align-items: center;
   }
-     .partners__link {
-      width: 120px;
-   }
-     .partners__logo {
-      max-width: 100%;
-   }
+  .partners__link {
+    width: 120px;
+  }
+  .partners__logo {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1358,11 +1359,12 @@ hr {
   display: flex;
 }
 .title__row {
-  max-width: 320px;
+  max-width: 255px;
 }
 .text__row {
   margin-top: 0;
   max-width: 720px;
+  margin-left: 95px;
 }
 .promo__footer {
   width: 100%;

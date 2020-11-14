@@ -983,7 +983,7 @@ hr {
 
 /* ==================legal-support==================== */
 .page {
-  background-color: #fff;
+  background: #e5e5e5;
 }
 
 .cards {
@@ -1811,6 +1811,8 @@ hr {
 .partners__link img {
   display: block;
   max-width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 @media (max-width: 768px) {
@@ -1976,12 +1978,13 @@ hr {
 }
 
 .title__row {
-  max-width: 320px;
+  max-width: 255px;
 }
 
 .text__row {
   margin-top: 0;
   max-width: 720px;
+  margin-left: 95px;
 }
 
 .promo__footer {
