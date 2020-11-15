@@ -846,13 +846,13 @@ hr {
 
 .slider__top .slick-prev {
   background: url("../images/slider_01/prev.svg") 0 0/100% no-repeat;
-  left: 10vw;
+  left: 21vw;
   z-index: 1;
 }
 
 .slider__top .slick-next {
   background: url("../images/slider_01/next.svg") 0 0/100% no-repeat;
-  left: 15vw;
+  left: 24vw;
   z-index: 1;
 }
 
