@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   $('.slider').slick({
+   $('.slick__init').slick({
       dots: false,
       adaptiveHeigh: true,
       slidesToShow: 1,
